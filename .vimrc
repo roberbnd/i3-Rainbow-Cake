@@ -1,0 +1,72 @@
+" .vimrc of Patrick Heinis
+
+" unsorted
+set nocompatible
+
+" expand tabs into spaces
+set expandtab
+
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+set softtabstop=4
+
+" set tabs to have 4 spaces
+set tabstop=4
+
+" indent when moving to the next line while writing code
+set autoindent
+
+" controls
+set backspace=indent,eol,start
+
+" disable arrow keys 
+" for prefix in ['i', 'n', 'v']
+"  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+"    exe prefix . "noremap " . key . " <Nop>"
+"  endfor
+"endfor
+
+" line numbering
+set number
+
+" enable syntax highlighting
+syntax on
+
+" color scheme
+"color darkblue
+"colorscheme flattened_dark
+
+" highlight searches
+set hlsearch
+
+" show a visual line under the cursor's current line
+set cursorline
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Instead of failing a command because of unsaved changes, instead raise a
+" dialogue asking if you wish to save changed files.
+set confirm
+
+" Use visual bell instead of beeping when doing something wrong
+set visualbell
+
+" Better command-line completion e.g. set colorscheme <Tab>
+set wildmenu
+
+" enforce utf-8
+set encoding=utf-8
+set background=dark

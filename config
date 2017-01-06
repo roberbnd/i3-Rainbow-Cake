@@ -5,6 +5,9 @@ bindsym mod1+d exec rofi -show run
 bindsym mod1+tab exec rofi -show window
 bindsym mod1+s exec rofi -show ssh
 
+#gnome-setting-daemon autostart
+exec --no-startup-id gnome-settings-daemon &
+
 #Network Manager
 exec --no-startup-id nm-applet
 
@@ -13,8 +16,8 @@ exec --no-startup-id xautolock -time 1 -locker blurlock
 
 #Background and Switcher
 exec feh --bg-scale ~/Pictures/bg02.png
-bindsym $mod+F7 exec feh --bg-scale ~Pictures/bg02.png
-bindsym $mod+F8 exec feh --bg-scale ~Pictures/bg01.png
+bindsym $mod+F7 exec feh --bg-scale ~/Pictures/bg02.png
+bindsym $mod+F8 exec feh --bg-scale ~/Pictures/bg01.png
 
 # Workspace Names
 	set $tag1 "[ Home]"

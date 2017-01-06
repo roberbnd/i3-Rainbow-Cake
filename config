@@ -32,7 +32,7 @@ bindsym $mod+F8 exec feh --bg-scale ~/Pictures/bg01.png
 
 # Scripts
 bindsym $mod+l exec ~/.config/i3/script/lockscreen.sh
-bindsym Print exec scrot ~/Pictures/%T-%d-%m-%Y-Bildschirmfoto.png && notify-send -a [System] "Bildschirmfoto wurde aufgenohmen."	
+bindsym Print exec scrot ~/Pictures/%T-%d-%m-%Y-Bildschirmfoto.png && notify-send -a [System] "Screenshot was taken."	
 bindsym $mod+i exec rxvt -e alsamixer					
 bindsym $mod+shift+p exec rxvt -g 70x20 -ip 
 
@@ -47,8 +47,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10% #
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen ndbrightness
-bindsym XF86KbdBrightnessDown exec ~/.config/i3/script/leds_down
-bindsym XF86KbdBrightnessUp exec ~/.config/i3/script/leds_up
+bindsym XF86KbdBrightnessDown exec sudo ~/.config/i3/script/leds_down
+bindsym XF86KbdBrightnessUp exec sudo ~/.config/i3/script/leds_up
 # "Modifier" (Win)
 set $mod Mod4
 

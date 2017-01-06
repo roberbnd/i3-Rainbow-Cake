@@ -5,6 +5,9 @@ bindsym mod1+d exec rofi -show run
 bindsym mod1+tab exec rofi -show window
 bindsym mod1+s exec rofi -show ssh
 
+#gnome-setting-daemon autostart
+exec --no-startup-id gnome-settings-daemon &
+
 #Network Manager
 exec --no-startup-id nm-applet
 
@@ -13,8 +16,8 @@ exec --no-startup-id xautolock -time 1 -locker blurlock
 
 #Background and Switcher
 exec feh --bg-scale ~/Pictures/bg02.png
-bindsym $mod+F7 exec feh --bg-scale ~Pictures/bg02.png
-bindsym $mod+F8 exec feh --bg-scale ~Pictures/bg01.png
+bindsym $mod+F7 exec feh --bg-scale ~/Pictures/bg02.png
+bindsym $mod+F8 exec feh --bg-scale ~/Pictures/bg01.png
 
 # Workspace Names
 	set $tag1 "[ Home]"
@@ -29,12 +32,12 @@ bindsym $mod+F8 exec feh --bg-scale ~Pictures/bg01.png
 
 # Scripts
 bindsym $mod+l exec ~/.config/i3/script/lockscreen.sh
-bindsym Print exec scrot ~/Pictures/%T-%d-%m-%Y-Bildschirmfoto.png && notify-send -a [System] "Bildschirmfoto wurde aufgenohmen."	
+bindsym Print exec scrot ~/Pictures/%T-%d-%m-%Y-Bildschirmfoto.png && notify-send -a [System] "Screenshot was taken."	
 bindsym $mod+i exec rxvt -e alsamixer					
 bindsym $mod+shift+p exec rxvt -g 70x20 -ip 
 
 # Floating Terminal
-bindsym $mod+o exec --no-startup-id rxvt -title "Terminalfl"  -bd rgba:6700/5A00/EB00/6700 -depth 32 -bg rgba:6700/5A00/EB00/6700
+bindsym $mod+o exec --no-startup-id rxvt -title "Terminalfl"  -bd rgba:1700/5a00/9e00/ffff -depth 32 -bg rgba:3000/5800/9900/ffff
 bindsym $mod+Return+Shift exec --no-startup-id rxvt -title "Terminalfl" -depth 32
 for_window [instance="rxvt" title="Terminalfl"] floating enable
 
@@ -44,8 +47,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10% #
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen ndbrightness
-bindsym XF86KbdBrightnessDown exec ~/.config/i3/script/leds_down
-bindsym XF86KbdBrightnessUp exec ~/.config/i3/script/leds_up
+bindsym XF86KbdBrightnessDown exec sudo ~/.config/i3/script/leds_down
+bindsym XF86KbdBrightnessUp exec sudo ~/.config/i3/script/leds_up
 # "Modifier" (Win)
 set $mod Mod4
 

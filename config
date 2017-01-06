@@ -37,7 +37,7 @@ bindsym $mod+i exec rxvt -e alsamixer
 bindsym $mod+shift+p exec rxvt -g 70x20 -ip 
 
 # Floating Terminal
-bindsym $mod+o exec --no-startup-id rxvt -title "Terminalfl"  -bd rgba:1700/5a00/9e00/ffff -depth 32 -bg rgba:1700/5a00/9e00/ffff
+bindsym $mod+o exec --no-startup-id rxvt -title "Terminalfl"  -bd rgba:1700/5a00/9e00/ffff -depth 32 -bg rgba:3000/5800/9900/ffff
 bindsym $mod+Return+Shift exec --no-startup-id rxvt -title "Terminalfl" -depth 32
 for_window [instance="rxvt" title="Terminalfl"] floating enable
 

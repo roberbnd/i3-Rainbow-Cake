@@ -9,4 +9,4 @@ I am currently using a Ubuntu on my ASUS ROG GL552VW.
 
 #Screenshots:
 ![LOL!1!elf? IS THIS A FURRY?](/Pictures/DesktopScreenshot.png?raw=true "Desktop")
-![Terminal](/Pictures/TerminalSCreenshot.png?raw=true "Terminal")
+![Terminal](/Pictures/TerminalScreenshot.png?raw=true "Terminal")
